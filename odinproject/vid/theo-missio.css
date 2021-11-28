@@ -1,0 +1,170 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Slab:wght@100;200;300;400&display=swap');
+
+* {
+  borde: 1px solid black;
+  box-sizing: border-box;
+}
+
+html, body, main {
+  margin: 0;
+  padding: 0;
+  background-color: #192841;
+}
+
+main {
+  background-color: #192841;
+}
+
+.whole {
+  display: flex;
+  flex-direction: row;
+}
+
+.right {
+  display:flex;
+  flex-direction: column;
+}
+
+header {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 35px 35px 35px 35px;
+  box-sizing: border-box;
+  position: fixed;
+  width: 100vw;
+  top-margin: 0;
+  top-padding: 0;
+  z-index: 5;
+}
+
+h1 {
+  text-align: center;
+  line-height: 60px;
+    font-family:'Josefin Slab';
+}
+
+.logo {
+background-image: url('https://i.postimg.cc/rw8xhbPX/miss2.jpg');
+background-size: cover;
+width: 34%;
+display: grid;
+grid-row: 1 / 5;
+grid-column: 1 / 4;
+}
+
+.title-page {
+background-color: graytext;
+  display: grid;
+  grid-column: 2 / 5;
+  grid-row: 1 / 5;
+}
+
+.top-nav {
+  background-color: darkgray;
+  display: grid;
+  grid-column: 1 / 5;
+  grid-row: 4 / 5;
+  box-sizing: border-box;
+  width: 100%;
+  box-shadow: 1px 1px 1px 1px black;
+}
+
+ul {
+display: flex;
+list-style: none;
+align-items: stretch;
+justify-content: space-around;
+margin: auto 0 auto 0;
+}
+
+li {
+  display: block;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+.side-nav {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  width: 120px;
+  background-color: black;
+  z-index: 4;
+  padding-top: 140px;
+  top: 0;
+  left: 0;
+  position: fixed;
+  margin:auto;
+  box-shadow: 3px 3px 3px 3px black;
+}
+
+.about,
+    .contact {
+  display: flex;
+  height: 20%;
+  width: auto;
+  color: #192841;
+}
+
+.suggest {
+  display: flex;
+  flex-direction: column;
+  height: 60%;
+  box-sizing: border-box;
+}
+
+.side-vid1 {
+  background-image: url("https://i.postimg.cc/J4JHwd4n/pexels-anang-santoso-4826567-2.jpg");
+  background-size: 140px;
+  height: 120px;
+  width: auto;
+  text-align: center;
+}
+
+.side-vid2 {
+  background-image: url("https://i.postimg.cc/1XYzwwHf/google-local.jpg");
+  background-size: 120px;
+  text-align:center;
+  line-height: 120px;
+}
+
+.side-vid3 {
+ background-image: url("https://i.postimg.cc/MKDCPz2m/pexels-ricky-g-lvez-1169922.jpg");
+  height: 120px;
+  background-size: auto 120px;
+  line-height: 70px;
+  text-align: center;
+}
+
+.fixed-helper {
+  width: 100vw;
+  height: 140px;
+  background-color: #192841;
+}
+
+h3 {
+  text-align: center;
+  font-family: "Outfit";
+  font-size: 24px;
+  color: White;
+}
+
+p {
+  text-align: center;
+  font-family: "Outfit";
+  font-size: 18px;
+  color: White;
+  margin: 0 15% 0 15%;
+}
+
+iframe {
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
