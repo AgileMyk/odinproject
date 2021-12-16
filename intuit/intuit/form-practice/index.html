@@ -1,0 +1,297 @@
+</div>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>New Tags(Elements) of HTML5</title>
+    <link rel="stylesheet" href="./styles.css">
+    <meta name="viewport" contet="width=device-width">
+    <link href="https://fonts.googleapis.com/css2?family=M+PLUS+1+Code:wght@200&family=Outfit&display=swap" rel="stylesheet">
+</head>
+
+<header>
+
+</header>
+
+<body>
+
+<main>
+
+<section class="row">
+
+    <div class="grid">
+
+        <section class="col-2-3">
+
+            <h2>Purchase a Conference Pass</h2>
+            <h5>$99 per Pass</h5>
+
+            <p>Purchase your Styles Conference pass using the form to 
+                the right. Multiple passes may be purchased within the 
+                same order, so feel free to bring a friend or two along.
+                 Once your order is finished we&#8217;ll follow up and 
+                 provide a receipt for your purchase. See you soon!</p>
+
+            <h4>Why Attend?</h4>
+
+            <ul class="why-attend">
+                <li>Over twenty world-class speakers</li>
+                <li>One full day of workshops and two full days of 
+                    presentations</li>
+                <li>Hosted at the Chicago Theatre, a historical landmark</li>
+                <li>August in Chicago is simply amazing</li>   
+            </ul>
+        </section><!--
+
+        --><section class="col-1-3">
+
+        </section>
+
+        <form class="col-1-3" action="#" method="post">
+
+            <fieldset class="register-group">
+
+                <label>
+                    Create a username
+                    <input type="text" name="username" placeholder="Full name" required>
+                </label>
+
+                <label>
+                    Enter your email
+                    <input type="email" name="email" placeholder="Email address" required>
+                </label>
+
+                <label>
+                    Number of passes
+                    <select name="qauntity required">
+                        <option selected>1</option>
+                        <option>2</option>
+                        <option>3</option>
+                        <option>4</option>
+                        <option>5</option>
+                    </select>
+                </label>
+
+                <label>
+                    Comments
+                    <textarea name="comments">
+
+                    </textarea>
+                </label>
+
+                <button class="btn-default" name="submit" value="purchase">Purchase</button>
+
+            </fieldset>
+
+        </form>
+
+    </div>
+
+</section>
+
+
+<fieldset class="account-info">
+    <legend>User Login</legend>
+
+
+    <label>
+        <p>Enter your user name here</p>
+        <input type="text" name="username" value="username">  
+    </label>
+
+    <label>
+        <p>Enter your password here</p>
+        <input type="password" name="password" value="password">
+    </label>
+
+    <label>
+        <button class="btn" type="submit" name="member-submit" value="member-submit" onclick="alert('working')">Submit</button>
+    </label>
+
+</fieldset>
+
+<fieldset class="account-action">
+    <legend>Moving forward</legend>
+    
+    <label>
+        <input type="checkbox" name="remember">Stay Signed In 
+    </label>
+
+    <label>
+        <button class="btn" type="submit" name="choice" value="choice" onclick="alert('working')">Decide</button>
+    </label>
+
+</fieldset>
+
+</main>
+
+<fieldset>
+        <legend>Having fun with forms</legend>
+
+        <p>The outlines that surround the various sections of this form are declared 
+            by the 'fieldset' tag. Within the opening fieldset tag, you may declare 
+            a boolean attribute 'hidden,' which will hide the entire fieldset. You can 
+            do the same for another boolean attribute, 'disabled,' which will not hide 
+            the section by disable it. If hidden is already in the same opening tag, 
+            the hidden will be nulled and overriden by the disabled. Another boolean, 
+            which can be placed in almost all tags within a form is the 'required' 
+            attribute, which will prevent a form from being submitted unless the portion 
+            of the form that is required is filled out - no form can be submitted while 
+            a required portion is left unfilled. Both name and email form controls 
+            include boolean attributes required and placeholder.
+        </p>
+
+    <fieldset>
+        <legend>Single choice options</legend>
+
+            <p>This is basic text</p>
+            <input type="text">
+
+            <p>This is color selection</p>
+            <input type="color">
+
+            <p>This is 10-digit based date entry</p>
+            <input type="date">
+
+            <p>This is the date and time with time-zone adjustment</p>
+            <input type="datetime">
+
+            <p>This is non-timezone adjusted time(local)</p>
+            <input type="datetime-local">
+
+            <p>This is for emails</p>
+            <input type="email">
+
+            <p>This is for file entry</p>
+            <input type="file">
+
+            <p>This is one is actually hidden, which is different than disabled</p>
+            <input type="hidden">
+
+            <p>You can enter an image in this one</p>
+            <input type="image">
+
+            <p>A password, wich cannot be seen, will go here</p>
+            <input type="password">
+
+            <p>A telephone number will go in here</p>
+            <input type="tel">
+
+            <p>This asks for the entry of a given month</p>
+            <input type="month">
+
+            <p>Here you will enter a URL</p>
+            <input type="url">
+
+            <p>This is asking for a specific week</p>
+            <input type="week">
+
+            <p>This is the range form control, which allows a 
+                choice with a range of some sort. It will need 
+            the values of 'min,' 'max,' and 'step': which control 
+        the starting minimum number, the ending maximum number, and 
+    the value of change per step in the range bar.</p>
+
+            <input type="range" step="0.5" min="0" max="20">
+            
+            <p>This is an input submit type, similar to a button with some limitations 
+                that a button does not have. Buttons are preferable.
+            </p>
+            <button type="submit" value="submit">
+    </fieldset>
+
+    <fieldset>
+        <legend>Multiple choice options</legend>
+        
+        <p>This is radio type: one must be selected only</p>
+        <label>
+            <input type="radio" name="colors" value="blue">blue
+        </label>
+        <label>
+            <input type="radio" name="colors" value="red">red
+        </label>
+        <label>
+            <input type="radio" name="colors" value="green">green
+        </label>
+        <label>
+            <input type="radio" name="colors" value="orange">orange
+        <p>You may use the boolean attribute 'selected' within an input 
+            radio tag to have it automatically selected with the loading 
+            of the website.
+        </p>
+        </label>
+
+        <label>
+            <p>This is the select option, which offers choices via a dropdown 
+                menu whos choices are surrounded by a series of 'option' tags which 
+                fall within the opening and closing 'select' tag.
+            </p>
+            <select>
+                <option selected>6 to 9am</option>
+                <option>9 to 12pm</option>
+                <option>12 3pm</option>
+                <option>3 to 6pm</option>
+                <option>6 to 9pm</option>
+            </select>
+            <p>You may use the boolean attribute of 'selected' on any of the options 
+                and they will be automatically chosen with the loading of the webpage. 
+                You may also type the boolean attribute 'multiple' in the select opening 
+                tag to allow for multiple selections.
+            </p>
+
+        </label>
+        
+    </fieldset>
+    
+</fieldset>
+
+<!--Form number 2 for addition practice-->
+
+<form name="form-two action="fillout-database.php" method="post">
+
+<fieldset>
+    <legend>Name information</legend>
+    <label>
+        Enter your name here
+        <input type="text" name="name" value="name">
+    </label>
+    
+    <label>
+        Create a username
+        <input type="text" name="username" value="username">
+    </label>
+</fieldset>
+
+<fieldset>
+    <legend>Congtact information</legend>
+    <label>
+        Enter your email here
+        <input type="email" name="email" value="email">
+    </label>
+    <label>
+        <legend>Phone information</legend>
+        Select the phone type
+        <select>
+            <option selected>Mobile</option>
+            <option>Work phone</option>
+            <option>Home phone</option>
+        </select>
+    </label>
+    <label>
+        Enter your number Here
+        <input type="number">
+    </label>
+    
+    <button name="submit">Submit</button>
+
+</fieldset>
+
+</form>
+
+</body>
+
+<footer>
+
+</footer>
+
+
