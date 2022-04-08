@@ -1,0 +1,165 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@500&family=Rubik+Microbe&family=Rubik+Moonrocks&display=swap');
+* {
+    box-sizing: border-box;
+    line-height: normal;
+    font-weight: normal;
+    padding: 0;
+    margin: 0;
+}
+
+:root {
+    --back-color: rgb(34, 31, 31);
+    --form-surround-color: rgb(223, 246, 247);  
+    --form-color: rgb(246, 254, 255);
+    --form-font: 'Dosis';
+    --form-font-head: 'Rubik Moonrocks';
+    --image-font: 'Rubik Moonrocks';
+    font-size: 18px;   
+}
+
+body {
+    display: grid;
+    grid-template-columns: 2fr 3fr;
+    grid-template-rows: 5fr 4fr 5fr;
+    height: 100vh;
+    background-color: var(--back-color);
+    padding: 0 12%;
+}
+
+.image {
+    grid-column: 1 / 2;
+    grid-row: 1 / 4;
+    background-image: url(https://i.postimg.cc/SRnBbthG/naveed-ahmed-x8-S8-Cu-Ys5-Yw-unsplash.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    font-family: var(--image-font);
+    z-index: 5;
+    position: relative;
+    text-align: center;
+}
+
+.hands {
+    background-color: rgba(255, 255, 255, 0.5);
+    height: 10rem;
+    width: 100%;
+    margin-top: 10rem;
+    display: flex;
+    flex-direction: row;
+}
+
+.hands .hand {
+    height: 50%;
+    background-image: url("https://i.postimg.cc/kXtbnkxR/arm-153258-1280.png");
+    width: 100%;
+}
+
+.image span {
+    position: absolute;
+    bottom: 2%;
+    font-family: var(--form-font);
+    color: #fff;
+    font-size: 1rem;
+}
+
+.image a {
+    text-decoration: ;
+    color: #fff;
+}
+
+.above-form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    grid-column: 2 / 3;
+    grid-row: 1 / 2;
+    background: var(--form-surround-color);
+    z-index: 4;
+    font-family: var(--form-font-head);
+    font-size: 1.5rem;
+    letter-spacing: ;
+    text-align: left;
+}
+
+.placement {
+    width: 80%;
+    height: 70%;
+}
+
+.gap {
+    width: 100%;
+    height: 40%;
+}
+
+.form {
+    background: var(--form-color);
+    grid-column: 2 / 3;
+    grid-row: 2 / 3;
+    display: flex;
+    flex-direction: column;
+    padding: 0 auto;
+    -webkit-box-shadow: 0 8px 8px -2px #000000;
+    -moz-box-shadow: 0 8px 8px -2px #000000;
+    box-shadow: 0 8px 4px -1px  #cac9c9;
+    font-family: var(--form-font);
+    font-size: 1.15rem;
+    z-index: 3;
+}
+
+.below-form {
+    grid-column: 2 / 3;
+    grid-row: 3 / 4;
+    background: var(--form-surround-color);
+    z-index: 2;
+    font-family: var(--form-font-head);
+}
+
+button {
+    height: 2.25rem;
+    width: 12rem;
+    background: rgb(79, 136, 241);
+    border: none;
+    box-shadow: 0px 3px 4px 1px #cac9c9;
+    margin-left: 3rem;
+    padding: 0;
+    border-radius: 11px;
+    position: relative;
+    top: 10rem;
+    font-family: var(--form-font);
+    color: white;
+    font-size: 18px;
+    font-weight: 900;
+}
+
+.below-form p {
+    margin-top: 10rem;
+    margin-left: 3rem;
+}
+
+.below-form a {
+    color:rgb(114, 161, 248);
+    text-decoration: none;
+}
+
+form div:first-child,
+form div:last-child {
+    height: 50%;
+}
+
+form div:first-child {
+    width: 35%;
+}
+
+form div:last-child {
+    width: 65%;
+}
+
+input {
+    display: inline;
+    border: 1px solid #E5E7EB;
+}
+
+input:focus {
+    border: 1px solid rgb(114, 161, 248);
+    box-shadow: 1px 1px 1px black;
+}
